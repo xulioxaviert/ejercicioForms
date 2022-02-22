@@ -15,14 +15,14 @@
         <div class="logo">
             <img src="img/logo.png" alt="logo">
         </div>
-
         <div class="main-container">
+
             <div class="title-container">
                 <h1 class="title">Formulario WEB</h1>
             </div>
 
             <div class="container-form">
-                <p>Formulario para darse de alta:</p>
+                <h2>Formulario para darse de alta:</h2>
                 <div class="question-container">
                     <label for="name">Nombre: </label>
                     <input type="text" id="name" name="name" placeholder="nombre:">
@@ -41,34 +41,36 @@
                 </div>
                 <div class="question-container">
                     <label for="username">Usuario: </label>
-                    <input type="text" id="username" name="username" placeholder="usuario" required>
+                    <input type="text" id="username" name="username" placeholder="usuario" required minlength="4"
+                        maxlength="8">
                 </div>
                 <div class="question-container">
-                    <label for="pass">Pass: </label>
-                    <input type="password" id="pass" name="pass" placeholder="contraseña" required>
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Por favor debe incuir 1 minúscula, 1 mayúscula , 1 número y una carácter especial."
+                        required>
                 </div>
 
-
-                <div class="container-abrv">
-                    <p>La contraseña debe tener:</p>
+                <div class="container-footer">
+                    <h3>La contraseña debe tener:</h3>
                     <ul>
-                        <li>Una mayuscula</li>
+                        <li>Una mayúscula</li>
                         <li>Un número</li>
-                        <li>Un carácter espcial</li>
-                        <li>Debe ser mayor de 6 textos</li>
+                        <li>Un carácter especial</li>
+                        <li>Debe ser mayor de 6 caracteres</li>
                     </ul>
-
                 </div>
-                <div class="question-container">
-                    <input class="bottom" type="submit" value="Enviar">
+                <div class="botton-container">
+                    <input type="submit" value="Enviar" class="btn">
                 </div>
 
             </div>
         </div>
 
         <footer>
-            <div class="footer"></div>
-            <p>Al darle al botón enviar, acepta las codiciones </p>
+            <div class="footer">
+                <p>Al darle al botón enviar, acepta las <a href="#">condiciones generales</a></p>
+            </div>
         </footer>
     </div>
 </body>
