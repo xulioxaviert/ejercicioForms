@@ -12,14 +12,17 @@
 body {
   margin: 0px;
   padding: 0px;
+  background: url(./img/backgruond.png);
 }
 
 .container {
   width: 75%;
   height: 75%;
-  margin-top: 0;
+  margin-top: 2%;
   margin-left: 15%;
   padding-top: 3%;
+  background-color: aliceblue;
+  border-radius: 10px;
 }
 
 .logo {
@@ -126,10 +129,15 @@ a {
     height: 80px;
   }
 
+body {
+  background: white;
+}
+
 .container {
   width: 100%;
   margin: 2%;
   padding: 0%;
+  
 }
 
 .main-container {
